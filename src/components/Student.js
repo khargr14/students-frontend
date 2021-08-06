@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 import {Redirect} from 'react-router-dom'
-import TeachersContainer from '../teachers/TeachersContainer'
+import TeachersContainer from '../containers/TeachersContainer'
 
 
 
