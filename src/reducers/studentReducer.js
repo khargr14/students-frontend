@@ -1,6 +1,13 @@
 export default function studentReducer(state = { students: [] }, action) {
 
     switch (action.type) {
+      case 'ERROR':
+        return {
+          error: {
+            originalError: action.payload?.error,
+            whichApiFailed: action.payload?.whichApiFailed
+          }
+        }
       case 'FETCH_STUDENTS':
         return { students: action.payload }
       case 'ADD_STUDENT': {

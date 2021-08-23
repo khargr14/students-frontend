@@ -53,9 +53,29 @@ class StudentForm extends React.Component {
 
                     <input type="submit"/>
                </form>
+
+               {
+                   this.props.error && (
+                       <div style={{
+                           color: 'red'
+                       }}>
+                           Something went wrong
+                        </div>
+                   )
+               }
            </div> 
         )
     }
 }
 
-export default connect(null, { addStudent })(StudentForm)
+// Access the `error` property from redux store/state
+
+function mapStateToProps(reduxState) {
+    const { error } = reduxState
+
+    return {
+        error
+    }
+}
+
+export default connect(mapStateToProps, { addStudent })(StudentForm)

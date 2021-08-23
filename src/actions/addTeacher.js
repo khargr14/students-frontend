@@ -17,5 +17,14 @@ export const addTeacher = (teacher, studentId) => {
           }
         }
       )
+      .catch((error) => {
+        dispatch({
+            type: 'ERROR',
+            payload: {
+              error,
+              whichApiFailed: `/api/v1/students/${studentId}/teachers`,
+            }
+        })
+    })
     }
   }

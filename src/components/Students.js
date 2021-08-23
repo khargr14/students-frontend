@@ -14,15 +14,12 @@ const Students = (props) => {
 
   return (
     <div>
-      {props.studnets.map(student =>
+      {props.students.map(student =>
         <li key={student.id}>
           <Link to={`/students/${student.id}`}>{student.name} - {student.number}- {student.email}- {student.industry}</Link>
           - <Button onClick={() => handleDelete(student)}>Delete</Button> - <Link to={`/students/${student.id}/edit`}>Edit</Link><br />
         </li>)}
-
     </div>
-
-
   )
 }
 
