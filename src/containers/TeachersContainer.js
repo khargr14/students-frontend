@@ -7,7 +7,7 @@ const TeachersContainer = (props) => {
         return(
             <div>
                 <TeacherInput student={props.student}/>
-                <Teachers teachers={props.student && props.student.teachers}/>
+                <Teachers teachers={props.student?.teachers || []}/>
             </div>
         )
 }

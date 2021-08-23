@@ -51,3 +51,24 @@ export default function studentReducer(state = { students: [] }, action) {
         return state    
     }
   }
+
+  /**
+   * App
+   *  Comp 1
+   *    Comp 2
+   *      StudentForm
+   *        react state
+    *         name: '',
+              number: '',
+              email: '', 
+   */
+
+
+  /**
+   * redux state ( GLOBAL in nature )
+   * redux state lives outside of our react components
+   * which means that any state in redux can be accessed
+   * by any of the react components
+   * 
+   * error 
+   */
