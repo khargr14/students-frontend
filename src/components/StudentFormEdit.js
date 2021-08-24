@@ -27,7 +27,7 @@ class StudentFormEdit extends React.Component {
             name: student.name,
             number: student.number,
             email: student.email, 
-            industry: student.industry
+           
         })
     }
         

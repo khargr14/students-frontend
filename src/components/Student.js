@@ -21,7 +21,7 @@ const Student = (props) => {
         {/* {student ? null: <Redirect to='/students'/>} */}
         {student ? student.name : null}
 
-        <h6> {student ? student.number : null} - {student ? student.email : null} - {student ? student.industry : null}  </h6>
+        <h6> {student ? student.number : null} - {student ? student.email : null}   </h6>
       </h1>
       <TeachersContainer student={student} />
     </div>

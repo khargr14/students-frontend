@@ -36,7 +36,7 @@ export const addStudent = (data) => {
 
             dispatch({ // now that data has been stored in the db, we need to update it in the browser as well
                 type:'ADD_STUDENT',
-                payload: jsonResponse // this is the student data ( name, email, industry, ...) that has been saved in the database
+                payload: jsonResponse // this is the student data ( name, email,  that has been saved in the database
             })
         })
         // if the fetch fails 
