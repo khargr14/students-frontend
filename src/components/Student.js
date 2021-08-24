@@ -14,7 +14,7 @@ const Student = (props) => {
   }, [props.students, props.match.params.id]);
   //let student = props.students[props.match.params.id-1];
   // let student=props.students[props.match.params.id-1];
-  // console.log(student,"data")
+ 
   return (
     <div>
       <h1>

@@ -12,14 +12,14 @@ import StudentFormEdit from '../components/StudentFormEdit'
 class StudentContainer extends React.Component {
 
     componentDidMount() {
-        console.log("a")
+       
         this.props.fetchStudents();
-        console.log("b")
+        
     }
 
   
     render() {
-        console.log('this biz props==>>', this.props)
+        console.log('this ....biz props==>>', this.props)
         return (
             <div>
                 <Switch>

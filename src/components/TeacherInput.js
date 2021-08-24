@@ -23,7 +23,7 @@ class TeacherInput extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        console.log('add cont==>>', this.state, 'props==>>', this.props)
+        console.log('add cont?==>>', this.state, 'props==>>', this.props)
         this.props.addTeacher(this.state, this.props.student.id);
         this.setState({
             name: '',
