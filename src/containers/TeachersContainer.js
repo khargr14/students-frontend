@@ -14,4 +14,3 @@ const TeachersContainer = (props) => {
 
 export default TeachersContainer
 
-//suppose to be blue

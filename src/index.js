@@ -16,10 +16,13 @@ import { Container } from 'react-bootstrap';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 //window.__REDUX_DEVTOOLS_EXTENSION__ / window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
 
+
+// to create store
 let store = createStore(studentReducer, composeEnhancers(applyMiddleware(thunk)))
 
 ReactDOM.render(
-  <Provider store={store}>
+  
+  <Provider store={store}> 
     <Router>
       <Container>
         <NavBar />
