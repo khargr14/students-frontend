@@ -1,27 +1,5 @@
 import React from "react"
-//import { useState, Component } from "react"
 
-//Functional
-// const Like =()=>{
-
-
-//     // set state
-// const [count, setCount] = useState(0)
-
-//  const handleCount=()=> {
-   
-//     setCount(count + 1)
-//   }
-
-//     return(
-//         <div>
-//         <button class="btn btn-success" onClick={handleCount}>Like</button> &nbsp; &nbsp;<span>{count}</span>
-//         </div>
-//     )
-
-// }
-
-//Class
 
 class Like extends React.Component{
 
