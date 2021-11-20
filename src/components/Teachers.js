@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { deleteTeacher } from '../actions/deleteTeacher';
 
 
+
+
 const Teachers = (props) => {
     const handleDelete = (teacher) => {
         props.deleteTeacher(teacher.id, teacher.student_id);
@@ -16,6 +18,8 @@ const Teachers = (props) => {
                 </li>)}
 
         </div>
+
+        
     )
 }
 
