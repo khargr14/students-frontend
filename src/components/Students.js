@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { deleteStudent } from '../actions/deleteStudent';
 import { Button } from 'react-bootstrap';
 import Like from './like'
+import DisLike from './Dislikes'
 
 
 const Students = (props) => {

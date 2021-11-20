@@ -1,0 +1,28 @@
+import React from 'react'
+
+
+class NewformInput extends React.Component {
+
+    state = {
+        count: 0
+    };
+
+
+    handleClick = ( ) =>{
+        function increaseOne(prev)
+
+        return{
+            count: prevState.count + 1
+        }
+    } 
+
+    
+   render(){
+return(
+    <div>
+      <button class="btn btn-success" onClick={this.handleCount}>Like</button> &nbsp; &nbsp;<span>{this.state.count}</span>
+      </div>
+)
+
+
+}
