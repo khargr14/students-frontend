@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import {addStudent} from '../actions/addStudent'
-
+import {withRouter } from 'react-router-dom'
 
 //   :name, :number, :email, :teacher_id
 
@@ -32,9 +32,10 @@ class StudentForm extends React.Component {
            
       
         })
+        this.props.history.replace('/students')
     }
 
-
+    
 
     render(){
         return(
@@ -78,4 +79,4 @@ function mapStateToProps(reduxState) {
     }
 }
 
-export default connect(mapStateToProps, { addStudent })(StudentForm)
+export default connect(mapStateToProps, { addStudent })(withRouter(StudentForm))
